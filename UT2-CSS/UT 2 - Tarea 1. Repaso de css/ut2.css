@@ -1,0 +1,127 @@
+/*Ejercicio 1*/
+#colores-fondos{
+    background-color: #3cb371;
+    opacity: 0.5;
+}
+#colores-fondos h2{
+    color: rgb(152, 25, 76);
+}
+#colores-fondos p{
+    color:crimson;
+}
+/*Ejercicio 2*/
+#tipografia h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight:900;
+}
+#tipografia p{
+    line-height: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Ejericicio 3*/
+#espaciado h2{
+    margin: 32px;
+}
+#espaciado div li{
+    padding-bottom: 15px;
+    text-align: center;
+}
+/*Ejercicio 4*/
+#bordes-sombras div{
+    border: dashed blue;
+    border-radius: 45px;
+    box-shadow: 5px 10px #888888;
+}
+/*Ejercicio 5*/
+#posicionamiento div{
+    position: relative;
+}
+#posicionamiento footer{
+    position: absolute;
+}
+/*Ejercicio 6*/
+button{
+    background-color:darkblue; 
+    color: cyan; 
+    border: 8px double cyan;
+    padding: 8px; 
+    border-radius: 15px;
+}
+/*Ejercicio 7*/
+#tablas table, th, tr, td{
+    border: solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+/*Ejercicio 8*/
+#contenedor h2{
+    margin-left: 10px;
+    padding-bottom: 8px;
+}
+#contenedor p{
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+#contenedor li{
+    margin-left: 50px;
+    padding-bottom: 15px;
+}
+/*Ejercicio 9*/
+#imagenes img{
+    width: 250px;
+    height: 200px;
+    border: 5px double green;
+    border-radius: 25px;
+}
+/*Ejercicio 10*/
+.icono{
+    width: 250px;
+    height: auto;
+    border: dotted grey;
+    border-radius: 30px;
+}
+/*Ejercicio 11*/
+form{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border:2px solid blue;
+    background-color: lightblue;
+    font-size: medium;
+}
+/*Ejercicio 12*/
+#enlaces a{
+    color: royalblue;
+    text-decoration:none;
+}
+#enlaces a:hover{
+    color: darkblue;
+    text-decoration:underline;
+}
+/*Ejercicio 13*/
+#efectos-texto h2{
+    text-transform:uppercase;
+    letter-spacing:5px;
+    text-shadow:red 1px 0 10px;
+}
+#efectos-texto h3{
+    text-transform:uppercase;
+    text-shadow:orangered 1px 0 10px;
+}
+#efectos-texto p{
+    text-transform:uppercase;
+}
+/*Ejercicio 14*/
+#elementos-linea #contenedor{
+    display: inline-block;
+    align-items: center;
+}
+#elemento{
+    display: inline;
+    align-content: end;
+}
+

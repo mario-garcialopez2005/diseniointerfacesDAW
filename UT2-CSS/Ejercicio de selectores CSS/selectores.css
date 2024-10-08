@@ -8,7 +8,7 @@
     color: blue;
 }
 h2,h3{
-    border: 2px solid goldenrod;
+    border: 2px solid orange;
 }
 ul li{
     color: red;
@@ -16,8 +16,14 @@ ul li{
 li>ul>li{
     color:green;
 }
-p~h3{
-    background-color: coral;
+ul+h3{
+    background-color: pink;
+}
+p>img{
+    border: 5px solid black;
+}
+p>img+span{
+    border: 5px solid red;
 }
 p+h3{
     background-color: blue;

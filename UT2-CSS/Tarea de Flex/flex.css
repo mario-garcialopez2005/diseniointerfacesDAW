@@ -1,0 +1,77 @@
+.contenedor_flex1, .contenedor_flex2,.contenedor_flex3,.contenedor_flex4,.contenedor_flex5,.contenedor_flex6{
+    background-color: lightgrey;
+    width: 40%;
+    height: 500px;
+    margin-bottom: 25px;
+}
+.contenedor_flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+.contenedor_flex1 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+.contenedor_flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+}
+.contenedor_flex2 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+.contenedor_flex3{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.contenedor_flex3 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+    height: 15%;
+}
+.contenedor_flex4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: stretch;
+}
+.contenedor_flex4 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+.contenedor_flex5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor_flex5 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+    
+}
+.contenedor_flex5 .flex-item:hover{
+    display: flex;
+    flex: 1 0 20%;
+    transition: 0.5s;
+    background-color: purple;
+}
+.contenedor_flex6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.contenedor_flex6 .flex-item{
+    background-color: cornflowerblue;
+    padding: 15px;
+    max-height: 50px ;
+}

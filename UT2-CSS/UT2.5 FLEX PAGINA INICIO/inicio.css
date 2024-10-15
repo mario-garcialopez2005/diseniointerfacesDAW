@@ -11,6 +11,7 @@ body{
 .cabecera{
     background-color: #239B56;
     color: white;
+    height: var(--height-principal);
 }
 .cabecera a{
     color: white;

@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+}
+.contenedor{
+    border: solid #f76707;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    margin-bottom: 50px;
+}
+.celda{
+    background-color: #ffd8a8;
+    border: solid #ffa94d;
+    border-radius: 10px;
+    color: #d9480f;
+    display: flex;
+    align-items: center;
+}
+/*EJERCICIO 1*/
+.contenedor1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+
+/*EJERCICIO 2*/
+.contenedor2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+.contenedor2 .celda1{
+    grid-column: 1/4;
+}
+
+/*EJERCICIO 3*/
+.contenedor3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+.contenedor3 .celda1{
+    grid-column: 1/4;
+}
+.contenedor3 .celda2{
+    grid-row: 2/6;
+}
+
+/*EJERCICIO 4*/
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr repeat(2,2fr); 
+    grid-template-areas: 
+    "area1 area1 area1"
+    "area2 area3 area4"
+    "area2 area5 area6";
+}
+.contenedor4 .celda1{
+    grid-area: area1;
+}
+.contenedor4 .celda2{
+    grid-area: area2;
+}
+.contenedor4 .celda3{
+    grid-area: area3;
+}
+
+/*EJERCICIO 5*/
+.contenedor5{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area3 area4 area4 area4"
+    "area5 area5 area5 area6";
+}
+.contenedor5 .celda1{
+    grid-area: area1;
+}
+.contenedor5 .celda2{
+    grid-area: area2;
+}
+.contenedor5 .celda3{
+    grid-area: area3;
+}
+.contenedor5 .celda4{
+    grid-area: area4;
+}
+.contenedor5 .celda5{
+    grid-area: area5;
+}
+.contenedor5 .celda6{
+    grid-area: area6;
+}
+
+/*EJERCICIO 6*/
+.contenedor6{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+
+}
+.contenedor6 .celda1{
+    order: 6;
+}
+.contenedor6 .celda2{
+    order: 1;
+}
+.contenedor6 .celda3{
+    order: 2;
+}
+.contenedor6 .celda4{
+    order: 3;
+}
+.contenedor6 .celda5{
+    order: 4;
+}
+.contenedor6 .celda6{
+    order: 5;
+}
+
+/*EJERCICIO 7*/
+.contenedor7{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);  
+
+}
+.contenedor7 .celda1{
+    grid-column: 2/4;
+}
+.contenedor7 .celda2{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.contenedor7 .celda3{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.contenedor7 .celda4{
+    grid-column: 1/4;
+}
+
+
+/*EJERCICIO 8*/
+.contenedor8{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);  
+    grid-auto-flow: column;
+}

@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
+
+
+  
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #313646;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 90%;
+    height: 50vh;
+    margin: 35px auto;
+}
+.contenedor-conciertos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+}
+.card{
+    border-radius: 1vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 0 20px;
+    
+}
+.textos{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.img1{
+    background-image: url('./img/1.jpg');
+}
+.img2{
+    background-image: url('./img/2.jpg');
+}
+.img3{
+    background-image: url('./img/3.jpg');
+}
+.img4{
+    background-image: url('./img/4.jpg');
+}
+.img5{
+    background-image: url('./img/5.jpg');
+}
+.img6{
+    background-image: url('./img/6.jpg');
+}
+.banner{
+    margin:0 10px;
+    border-radius: 1vh;
+    background-image: url('./img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    
+}
+h3{
+    font-size: 3vh;
+}
+p{
+    font-size: 2vh;
+}
+li{
+    font-size: 2vh;
+}
+
+.banner h3{
+    margin: auto;
+}
+.boton{
+    margin: auto;
+    background-color: yellow;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    height: 50%;
+    font-size: 2vh;
+}
+.boton:hover{
+    background-color: rgb(238, 119, 8);
+    color: white;
+}
+.banner ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+.banner ul li{
+    padding: 10px 0;
+}
+@media (max-width: 900px) {
+    .contenedor-conciertos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-conciertos{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        }
+}

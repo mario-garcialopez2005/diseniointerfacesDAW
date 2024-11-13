@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0"/>
+    <style>
+        @media (max-width: 350px){
+            .imagen3{
+                background-image: url("imagenes/foto31.jpg");
+                background-size: cover;
+            }
+        }
+        @media (min-width: 351px) and (max-width: 1024px){
+            .imagen3{
+                background-image: url("imagenes/foto32.jpg");
+                background-size: cover;
+            }
+        }
+        @media (min-width: 1024px){
+            .imagen3{
+                background-image: url("imagenes/foto33.jpg");
+                background-size: cover;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ejercicio1">
+        <h1>EJERCICIO 1</h1>
+        <figure>
+            <img src="imagenes/image1.jpg" class="general" style="width: 800px; height: 600px;">
+            <figcaption>Imagen 800x600</figcaption>
+        </figure>
+        <picture>
+            <source srcset="imagenes/gato.png" type="image/png" style="width: 200px;"/>
+            <source srcset="imagenes/gato.webp" type="image/webp" style="width: 200px;"/>
+            <img src="imagenes/gato.jpg" alt="photo" style="width: 200px;"/>
+            <p>Revisa el formato de la imagen</p>
+        </picture>
+        <div class="imagen3" style="width: 600px; height: 450px;"></div>
+    </div>
+    <div class="ejercicio2">
+        <h1>EJERCICIO 2</h1>
+        <svg height="200px" width="200px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <circle r="20px" cx="100" cy="100" fill="blue" />
+        </svg>
+        <svg height="200px" width="200px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <circle r="20px" cx="100" cy="100" fill="red" stroke="green" stroke-width="3" />
+        </svg>
+        <svg height="200px" width="200px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <rect width="100" height="40" x="50" y="100" fill="blue" />
+        </svg>
+        <svg height="200px" width="200px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <line x1="0" y1="0" x2="200" y2="200" style="stroke:yellow;stroke-width:2" />
+        </svg>
+        <svg height="350px" width="400px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <polygon points="60 13,110 48,92 110,30 110,13 48" style="fill:blue" />
+        </svg>
+        <svg height="500px" width="500px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <line x1="0" y1="0" x2="50" y2="25" style="stroke:red;stroke-width:2" />
+            <line x1="50" y1="25" x2="50" y2="100" style="stroke:blue;stroke-width:2" />
+            <line x1="50" y1="100" x2="150" y2="100" style="stroke:green;stroke-width:2" />
+            <line x1="150" y1="100" x2="200" y2="200" style="stroke:orange;stroke-width:2" />
+        </svg><br />
+        <svg height="150px" width="300px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <circle r="60px" cx="150" cy="75" fill="blue" />
+            <rect width="200" height="50" x="50" y="50" fill="red" />
+            <ellipse rx="60" ry="30" cx="150" cy="100" fill="yellow" />
+        </svg>
+        <svg height="150px" width="300px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <rect width="200" height="100" x="50" y="25" fill="red" />
+            <text x="15" y="75" fill="black" font-size="25">Esto es un rectangulo</text>
+        </svg>
+        <svg height="150px" width="250px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <text x="5" y="30" fill="red" font-size="32" transform="rotate(28 20,40)">Esto es un SVG</text>
+        </svg>
+        <svg height="200px" width="200px " xmlns="http://www.w3.org/2000/svg" style="border: 2px solid black;">
+            <rect width="150" height="100" x="25" y="50" fill="red" />
+            <circle r="40px" cx="100" cy="100" fill="blue" />
+            <circle r="20px" cx="50" cy="100" fill="yellow" />
+            <circle r="20px" cx="150" cy="100" fill="yellow" />
+            <line x1="25" y1="100" x2="175" y2="100" style="stroke:green;stroke-width:5" />
+        </svg>
+    </div>
+    <div class="ejercicio3">
+        <h1>EJERCICIO 3</h1>
+        <p>Flecha izquierda</p>
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+        <span class="material-symbols-outlined">&#xE5C4;</span><br/>
+        <p>Refrescar</p>
+        <span class="material-symbols-outlined">
+            refresh
+        </span>
+        <span class="material-symbols-outlined">&#xE5D5;</span><br/>
+        <p>Home</p>
+        <span class="material-symbols-outlined">
+            home
+        </span>
+        <span class="material-symbols-outlined">&#xE88A;</span><br/>
+        <p>Menu</p>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+        <span class="material-symbols-outlined">&#xE5D2;</span><br/>
+        <p>Settings</p>
+        <span class="material-symbols-outlined">
+            settings
+        </span>
+        <span class="material-symbols-outlined">&#xE8B8;</span><br/>
+    </div>
+    <div class="ejercicio4">
+        <h1>EJERCICIO 4</h1>
+        <audio controls loop preload="auto">
+            <source src="audios/relaxing-guitar-loop-v5-245859.ogg.ogg" type="audio/ogg">
+            <source src="audios/relaxing-guitar-loop-v5-245859.mp3.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ejercicio5">
+        <h1>EJERCICIO 5</h1>
+        <video controls poster="imagenes/poster.webp" width="1280" height="720">
+            <source src="videos/219862_small.webm" type="video/webm" />
+            <source src="videos/219862_small.mp4" type="video/mp4" />
+            <source src="videos/219862_small.mkv" type="video/mkv" />            
+        </video>
+    </div>
+</body>
+</html>

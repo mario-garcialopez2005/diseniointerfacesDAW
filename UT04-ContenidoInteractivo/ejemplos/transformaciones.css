@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+}
+.caja1{
+    background-color: brown;
+    /*rotate: 45deg;*/
+    /*transform: translate(10rem,10rem);*/
+}
+.caja2{
+    background-color: yellow;
+    /*rotate: -10deg;*/
+}
+.caja3{
+    background-color: blue;
+    /*transform-origin: left top;
+    rotate: 45deg;*/
+}
+.caja4{
+    background-color: pink;
+    /*transform: skew(-10deg,20deg);*/
+}
+.caja5{
+    background-color: yellowgreen;
+    margin: 50px auto;
+    /* transition-property: all;
+    transition: 2s;
+    transition-timing-function: ease; */
+    transition: all 2s linear;
+    box-shadow: 0 0 5px limegreen, 
+    0 0 10px limegreen, 
+    0 0 25px limegreen,
+    0 0 200px limegreen;
+}
+.caja5:hover{
+    border-radius: 50%;
+}

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Twinkle Star', sans-serif;
 }
 body{
     display: flex;
@@ -48,7 +49,8 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffc400;
-    font-size: 4em;
+    font-weight: bolder;
+    font-size: 5em;
     cursor: default;
     background: linear-gradient(#ffffff,#f1f1f1);
     transform-style: preserve-3d;
@@ -73,17 +75,19 @@ h2{
     position: absolute;
     bottom: 200px;
     color: #838383;
-    font-size: 2em;
+    font-size: 3em;
     transition: 0.5s;
     cursor: pointer;
+    z-index: 2;
 }
 h2.active{
     color: #fff;
     text-shadow: 0 0 20px #fff,
     0 0 50px #fff;
+    
 }
 h2:after{
-    content: ' 2025';
+    content: ' 2025!';
     transition: 0.5s;
 }
 h2.active:after{
@@ -183,3 +187,56 @@ h2.active:after{
     0 0 80px rgba(0, 226, 255, 1),
     0 0 0 4px rgba(0, 226, 255, 0.1);
 }
+
+.confetti-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    overflow: hidden;
+  }
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-100%) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0.8;
+    }
+  }
+  .confetti-wrapper .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: var(--confetti-color, red);
+    opacity: 0.9;
+    animation: confetti-fall var(--fall-duration, 4s) linear infinite;
+  }
+  .confetti-piece:nth-child(1) {
+    left: 10%;
+    --confetti-color: #ff6347;
+    --fall-duration: 3s;
+  }
+  .confetti-piece:nth-child(2) {
+    left: 25%;
+    --confetti-color: #ffa500;
+    --fall-duration: 5s;
+  }
+  .confetti-piece:nth-child(3) {
+    left: 40%;
+    --confetti-color: #32cd32;
+    --fall-duration: 4.5s;
+  }
+  .confetti-piece:nth-child(4) {
+    left: 60%;
+    --confetti-color: #1e90ff;
+    --fall-duration: 3.5s;
+  }
+  .confetti-piece:nth-child(5) {
+    left: 80%;
+    --confetti-color: #ff69b4;
+    --fall-duration: 6s;
+  }

@@ -1,0 +1,40 @@
+div{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+}
+
+.movil{
+    position: relative;
+    background-color: blue;
+    animation: mover 4s linear alternate infinite;
+}
+
+.color{
+    background-color: red;
+    animation: cambiarColor 6s linear infinite;
+}
+@keyframes mover{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 100%;
+        left: 100%;
+    }
+}
+@keyframes cambiarColor{
+    0% {
+        background-color: #000;
+    }
+    30% {
+        background-color: #f00;
+    }
+    60% {
+        background-color: #0f0;
+    }
+    100% {
+        background-color: #00f;
+    }
+}

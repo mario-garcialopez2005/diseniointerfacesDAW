@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Knewave';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    cursor: pointer;
+}
+.box::before{
+    content: 'Adios';
+    position: absolute;
+    top: -0.75em;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    transition: 1s;
+}
+.box:hover::before{
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(30px);
+}
+.box::after{
+    content: '¡Feliz Año Nuevo!';
+    position: absolute;
+    left: 0;
+    top: -0.75em;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    transition: 1s;
+
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(30px);
+}
+.box:hover::after{
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(00px);
+}
+.box span{
+    display: inline-block;
+    color: #fff;
+    font-size: 10em;
+    font-weight: bold;
+    transition: 2s;
+    filter: blur(1px);
+    font-family: 'Monoton';
+}
+.box span:last-child{
+    color: #ff3c00;
+}
+.box:hover span:last-child{
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(30px);
+}
+.box span:nth-child(3):after{
+    content: '5';
+    position: absolute;
+    color: #b18700;
+    transform: rotate(-45deg) translateY(200px);
+    opacity: 1;
+    filter: blur(30px);
+    transition: 2s;
+}
+.box:hover span:nth-child(3):after{
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}

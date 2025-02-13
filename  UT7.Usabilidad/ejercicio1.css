@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+p {
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.content-box {
+    background-color: #999999;
+    color: black;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+a {
+    color: #0000ff;
+}
